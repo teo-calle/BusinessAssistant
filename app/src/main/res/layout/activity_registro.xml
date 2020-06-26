@@ -8,7 +8,7 @@
     android:orientation="vertical"
 
     android:padding="8dp"
-    tools:context=".RegisterActivity">
+    tools:context=".RegistroActivity">
 
     <ScrollView
         android:layout_width="match_parent"
