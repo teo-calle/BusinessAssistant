@@ -13,7 +13,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbarTrackVertical="@color/chocolate">
+        android:scrollbarTrackVertical="@color/chocolate"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +25,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="30dp"
                 android:fontFamily="@font/nunito_extralight"
@@ -47,7 +48,8 @@
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/et_Correo"
@@ -63,7 +65,8 @@
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:autofillHints="" />
 
             <EditText
                 android:id="@+id/et_Contrasena"

@@ -20,7 +20,7 @@ class RegistroActivity : AppCompatActivity() {
         val mes = c.get(Calendar.MONTH)
         val dia = c.get(Calendar.DAY_OF_MONTH)
 
-        tvFecha.setOnClickListener {
+        iv_calendar.setOnClickListener {
             val dpd = DatePickerDialog(this,
                 DatePickerDialog.OnDateSetListener { view: DatePicker, mYear: Int, mMonth: Int, mDay: Int ->
                     tvFecha.setText("" + mDay + "/" + (mMonth + 1) + "/" + mYear)
