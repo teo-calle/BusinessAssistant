@@ -3,7 +3,7 @@
     <string name="correo_electronico">Correo Electrónico</string>
     <string name="password">Contraseña</string>
     <string name="iniciar_sesion">LOGIN</string>
-    <string name="registrarse">SIGN UP</string>
+    <string name="registrarse">Ir a Registro</string>
 
 
     <string name="digitar_nombre">Nombre</string>
