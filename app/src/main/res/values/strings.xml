@@ -5,7 +5,6 @@
     <string name="iniciar_sesion">LOGIN</string>
     <string name="registrarse">Ir a Registro</string>
 
-
     <string name="digitar_nombre">Nombre</string>
     <string name="digitar_correo">Correo electronico</string>
     <string name="digitar_contrasena">Contraseña</string>
@@ -21,6 +20,12 @@
     <string name="correo_texto"> Correo :</string>
     <string name="terminos"><![CDATA[Terminos & Condiciones]]></string>
     <string name="registrate">Registrarse</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inventario">INVENTARIO</string>
+    <string name="compras">COMPRAS Y ORDENES</string>
+    <string name="clientes">CLIENTES</string>
+    <string name="estadisticas">ESTADISTICAS Y REPORTES</string>
+    <string name="tereas">TAREAS</string>
 
 </resources>

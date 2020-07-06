@@ -2,9 +2,9 @@ package com.teo.businessassistant
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -18,9 +18,9 @@ class LoginActivity : AppCompatActivity() {
 
 
         var datosRecibidos : Bundle? =intent.extras
-        if(datosRecibidos != null){
-            correo = datosRecibidos?.getString("correo")
-            contra = datosRecibidos?.getString("contra")
+        if(datosRecibidos != null) {
+            correo = datosRecibidos.getString("correo")
+            contra = datosRecibidos.getString("contra")
             //Toast.makeText(this,"return main to login",Toast.LENGTH_SHORT).show()
         }
 
@@ -65,9 +65,9 @@ class LoginActivity : AppCompatActivity() {
 
         if(requestCode==1001 && resultCode==Activity.RESULT_OK){
             var datosRecibidos : Bundle? =data!!.extras
-            if(datosRecibidos != null){
-                correo = datosRecibidos?.getString("correo")
-                contra = datosRecibidos?.getString("contra")
+            if(datosRecibidos != null) {
+                correo = datosRecibidos.getString("correo")
+                contra = datosRecibidos.getString("contra")
                 //Toast.makeText(this,correo,Toast.LENGTH_SHORT).show()
             }
 

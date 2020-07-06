@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navegationFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/clientesFragment"
+        android:name="com.teo.businessassistant.clientesFragment"
+        android:label="fragment_clientes"
+        tools:layout="@layout/fragment_clientes" />
+    <fragment
+        android:id="@+id/comordFragment"
+        android:name="com.teo.businessassistant.comordFragment"
+        android:label="fragment_comord"
+        tools:layout="@layout/fragment_comord" />
+    <fragment
+        android:id="@+id/estyrepFragment"
+        android:name="com.teo.businessassistant.estyrepFragment"
+        android:label="fragment_estyrep"
+        tools:layout="@layout/fragment_estyrep" />
+    <fragment
+        android:id="@+id/inventarioFragment"
+        android:name="com.teo.businessassistant.inventarioFragment"
+        android:label="fragment_inventario"
+        tools:layout="@layout/fragment_inventario" />
+    <fragment
+        android:id="@+id/navegationFragment"
+        android:name="com.teo.businessassistant.NavegationFragment"
+        android:label="fragment_navegation"
+        tools:layout="@layout/fragment_navegation">
+        <action
+            android:id="@+id/action_navegationFragment_to_inventarioFragment"
+            app:destination="@id/inventarioFragment" />
+        <action
+            android:id="@+id/action_navegationFragment_to_comordFragment"
+            app:destination="@id/comordFragment" />
+        <action
+            android:id="@+id/action_navegationFragment_to_tareasFragment"
+            app:destination="@id/tareasFragment" />
+        <action
+            android:id="@+id/action_navegationFragment_to_clientesFragment"
+            app:destination="@id/clientesFragment" />
+        <action
+            android:id="@+id/action_navegationFragment_to_estyrepFragment"
+            app:destination="@id/estyrepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tareasFragment"
+        android:name="com.teo.businessassistant.tareasFragment"
+        android:label="fragment_tareas"
+        tools:layout="@layout/fragment_tareas" />
+</navigation>
