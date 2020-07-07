@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item2"
+            android:icon="@drawable/ic_lupa"
+            android:title="Buscar" />
+        <item
+            android:id="@+id/item3"
+            android:icon="@drawable/ic_calendario"
+            android:title="Eventos" />
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/ic_notificacion"
+            android:title="Notificaciones" />
+        <item
+            android:id="@+id/item5"
+            android:icon="@drawable/ic_verificado"
+            android:title="Reportes" />
+
+    </group>
+    <item android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/item6"
+                android:icon="@drawable/ic_equipo"
+                android:title="Configuración" />
+            <item
+                android:id="@+id/item7"
+                android:icon="@drawable/ic_mensaje"
+                android:title="Contáctanos" />
+        </menu>
+    </item>
+</menu>

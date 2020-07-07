@@ -6,4 +6,5 @@
         android:id="@+id/item1"
         android:title="@string/menu_cerrarsesion"
         app:showAsAction="never" />
+
 </menu>
