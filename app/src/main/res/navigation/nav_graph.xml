@@ -25,7 +25,12 @@
         android:id="@+id/inventarioFragment"
         android:name="com.teo.businessassistant.inventarioFragment"
         android:label="fragment_inventario"
-        tools:layout="@layout/fragment_inventario" />
+        tools:layout="@layout/fragment_inventario" >
+        <action
+            android:id="@+id/action_inventarioFragment_to_new_ElementFragment22"
+            app:destination="@id/new_ElementFragment"
+            app:popUpTo="@id/inventarioFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navegationFragment"
         android:name="com.teo.businessassistant.NavegationFragment"
@@ -52,4 +57,9 @@
         android:name="com.teo.businessassistant.tareasFragment"
         android:label="fragment_tareas"
         tools:layout="@layout/fragment_tareas" />
+    <fragment
+        android:id="@+id/new_ElementFragment"
+        android:name="com.teo.businessassistant.New_ElementFragment"
+        android:label="fragment_new_element"
+        tools:layout="@layout/fragment_new_element" />
 </navigation>

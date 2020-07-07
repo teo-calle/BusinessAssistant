@@ -27,5 +27,10 @@
     <string name="clientes">CLIENTES</string>
     <string name="estadisticas">ESTADISTICAS Y REPORTES</string>
     <string name="tereas">TAREAS</string>
+    <string name="nuevo_elemento">Nuevo Elemento</string>
+    <string name="tipo_elemento">Tipo de Elemento</string>
+    <string name="rb1_producto">Producto</string>
+    <string name="rb2_servicio">Servivio</string>
+    <string name="new_element">Nuevo Elemento</string>
 
 </resources>
