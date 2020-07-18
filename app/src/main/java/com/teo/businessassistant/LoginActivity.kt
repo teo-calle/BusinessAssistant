@@ -1,95 +1,66 @@
 package com.teo.businessassistant
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AppCompatActivity() {
 
-    var correo: String? = ""
-    var contra: String? = ""
+class LoginActivity : AppCompatActivity() {
+    val mAuth: FirebaseAuth =FirebaseAuth.getInstance();
+
+ /* Inicia en NavegationFragment cuando ya hay una sesión iniciada*/
+    override fun onStart() {
+        super.onStart()
+        val user=mAuth.currentUser
+        if(user != null)
+            goToMainActivity()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
 
-        var datosRecibidos : Bundle? =intent.extras
-        if(datosRecibidos != null) {
-            correo = datosRecibidos.getString("correo")
-            contra = datosRecibidos.getString("contra")
-            //Toast.makeText(this,"return main to login",Toast.LENGTH_SHORT).show()
-        }
-
 
         tv_registrar.setOnClickListener {
-
-            var intent =Intent(this,RegistroActivity::class.java)
-            startActivityForResult(intent,1001)
-
-
-
+            startActivity(Intent(this,RegistroActivity::class.java))
         }
 
         bt_iniciarsesion.setOnClickListener{
+            val correo=et_CorreoCliente.text.toString()
+            val contra=et_Contra.text.toString()
 
-            if (correo!!.isEmpty()||contra!!.isEmpty())
-                Toast.makeText(this,"Sus datos no coinciden",Toast.LENGTH_SHORT).show()
+            signInWithFirebase(correo, contra)
+        }
+    }
 
-            else{
-                if(et_Correo.text.toString()==correo && et_Contra.text.toString()==contra){
-                    Toast.makeText(this,"Valido ",Toast.LENGTH_SHORT).show()
+/* Iniciar sesion con firebase*/
+    private fun signInWithFirebase(correo: String, contra: String) {
+        mAuth.signInWithEmailAndPassword(correo, contra)
+            .addOnCompleteListener(
+                this
+            ) { task ->
+                if (task.isSuccessful) {
                     goToMainActivity()
-
+                } else {
+                    showMessage("Authentication failed.")
+                    Log.w("TAG", "signInWithnEmail:failure", task.getException());
                 }
-
-                else
-                    Toast.makeText(this,"Sus datos no coinciden ",Toast.LENGTH_SHORT).show()
             }
-
-
-        }
-
-
-
     }
 
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-
-
-        if(requestCode==1001 && resultCode==Activity.RESULT_OK){
-            var datosRecibidos : Bundle? =data!!.extras
-            if(datosRecibidos != null) {
-                correo = datosRecibidos.getString("correo")
-                contra = datosRecibidos.getString("contra")
-                //Toast.makeText(this,correo,Toast.LENGTH_SHORT).show()
-            }
-
-        }
-
-
-
+    private fun showMessage(msg: String) {
+        Toast.makeText(
+            this, msg,
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
-
-    private fun goToMainActivity(){
-        var intent =Intent(this,MainActivity::class.java)
-        intent.putExtra("correo",correo)
-        intent.putExtra("contra",contra)
-
-
-        startActivity(intent)
-        finish()
+    private fun goToMainActivity() {
+        startActivity(Intent(this, MainActivity::class.java))
     }
-
-
-
-
-
 }

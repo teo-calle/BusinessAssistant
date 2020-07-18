@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/et_Nombre"
+                android:id="@+id/et_nombreCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -52,7 +52,7 @@
                 android:autofillHints="" />
 
             <EditText
-                android:id="@+id/et_Correo"
+                android:id="@+id/et_CorreoCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -69,7 +69,7 @@
                 android:autofillHints="" />
 
             <EditText
-                android:id="@+id/et_Contrasena"
+                android:id="@+id/et_celularCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -85,7 +85,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/et_Rcontrasena"
+                android:id="@+id/et_direccionCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -172,7 +172,7 @@
         </LinearLayout>
 
             <Button
-                android:id="@+id/btRegistrar"
+                android:id="@+id/bt_agregarcliente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 

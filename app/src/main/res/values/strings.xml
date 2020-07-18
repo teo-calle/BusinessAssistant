@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BusinessAssistant</string>
+    <string name="app_name">Business Assistant</string>
     <string name="correo_electronico">Correo Electrónico</string>
     <string name="password">Contraseña</string>
     <string name="iniciar_sesion">LOGIN</string>
@@ -32,5 +32,14 @@
     <string name="rb1_producto">Producto</string>
     <string name="rb2_servicio">Servivio</string>
     <string name="new_element">Nuevo Elemento</string>
+    <string name="nuevo_cliente">Nuevo Cliente</string>
+    <string name="agregar_cliente">Agregar</string>
+    <string name="celular_cliente">Celular</string>
+    <string name="direccion_cliente">Dirección</string>
+    <string name="title_activity_clientes">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_cliente">MainActivity</string>
 
 </resources>
