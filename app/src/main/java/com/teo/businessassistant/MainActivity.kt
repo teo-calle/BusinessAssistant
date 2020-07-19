@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             correo = datosRecibidos?.getString("correo")
             contra = datosRecibidos?.getString("contra")
 
-            tv_correo.text=correo
+            //tv_correo.text=correo
 
         }
 

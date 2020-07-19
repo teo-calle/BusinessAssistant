@@ -13,12 +13,12 @@ class LoginActivity : AppCompatActivity() {
     val mAuth: FirebaseAuth =FirebaseAuth.getInstance();
 
  /* Inicia en NavegationFragment cuando ya hay una sesión iniciada*/
-    override fun onStart() {
+    /*override fun onStart() {
         super.onStart()
         val user=mAuth.currentUser
         if(user != null)
             goToMainActivity()
-    }
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
