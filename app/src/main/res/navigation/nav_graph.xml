@@ -13,16 +13,28 @@
         tools:layout="@layout/fragment_clientes" >
         <action
             android:id="@+id/next_to_buscarcliente"
-            app:destination="@id/buscarclienteFragment" />
+            app:destination="@id/buscarclienteFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
             android:id="@+id/next_to_actualizarcliente"
-            app:destination="@id/actulizarClienteFragment" />
+            app:destination="@id/actulizarClienteFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
             android:id="@+id/next_to_eliminarcliente"
             app:destination="@id/eliminarClienteFragment" />
         <action
             android:id="@+id/next_to_listaclientes"
-            app:destination="@id/listaClientesFragment" />
+            app:destination="@id/listaClientesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/comordFragment"
