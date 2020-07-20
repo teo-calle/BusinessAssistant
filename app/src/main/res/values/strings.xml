@@ -47,5 +47,8 @@
     <string name="Actualizar">Actualizar</string>
     <string name="Buscar">Buscar</string>
     <string name="navigation_create">home</string>
+    <string name="buscar_cliente">BUSCAR</string>
+    <string name="digite_nom_cliente">Digite nombre</string>
+    <string name="eliminar_cliente">Eliminar</string>
 
 </resources>

@@ -10,7 +10,11 @@
         android:id="@+id/clientesFragment"
         android:name="com.teo.businessassistant.clientesFragment"
         android:label="fragment_clientes"
-        tools:layout="@layout/fragment_clientes" />
+        tools:layout="@layout/fragment_clientes" >
+        <action
+            android:id="@+id/action_clientesFragment_to_buscarclienteFragment"
+            app:destination="@id/buscarclienteFragment" />
+    </fragment>
     <fragment
         android:id="@+id/comordFragment"
         android:name="com.teo.businessassistant.comordFragment"
@@ -62,4 +66,9 @@
         android:name="com.teo.businessassistant.New_ElementFragment"
         android:label="fragment_new_element"
         tools:layout="@layout/fragment_new_element" />
+    <fragment
+        android:id="@+id/buscarclienteFragment"
+        android:name="com.teo.businessassistant.BuscarclienteFragment"
+        android:label="fragment_buscarcliente"
+        tools:layout="@layout/fragment_buscarcliente" />
 </navigation>

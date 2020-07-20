@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
@@ -14,6 +15,7 @@ import com.teo.businessassistant.model.Cliente
 import kotlinx.android.synthetic.main.activity_registro.bt_agregarcliente
 import kotlinx.android.synthetic.main.activity_registro.et_CorreoCliente
 import kotlinx.android.synthetic.main.fragment_clientes.*
+import kotlinx.android.synthetic.main.fragment_inventario.*
 import java.sql.Types
 
 
@@ -25,10 +27,15 @@ class clientesFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_clientes, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+
+
 
         /*FIREBASE*/
         mostrarMensajeBienvenida()
@@ -77,4 +84,7 @@ class clientesFragment : Fragment() {
         et_celularCliente.setText("")
         et_direccionCliente.setText("")
     }
+
+
+
 }
