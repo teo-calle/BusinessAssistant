@@ -35,7 +35,7 @@ class NavegationFragment : Fragment() {
 
         /************************Botones**************************************************/
         bt_inventario.setOnClickListener {
-            findNavController().navigate(R.id.next_to_inventarioFrament)
+            findNavController().navigate(R.id.next_to_listinventario)
         }
 
         bt_compras.setOnClickListener {
