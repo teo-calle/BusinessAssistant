@@ -1,6 +1,5 @@
 package com.teo.businessassistant
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -37,22 +36,22 @@ class NavegationFragment : Fragment() {
 
 
         bt_inventario.setOnClickListener {
-            findNavController().navigate(R.id.action_navegationFragment_to_inventarioFragment)
+            findNavController().navigate(R.id.next_to_inventarioFrament)
         }
 
         bt_compras.setOnClickListener {
-            findNavController().navigate(R.id.action_navegationFragment_to_comordFragment)
+            findNavController().navigate(R.id.next_to_comordFragment)
         }
 
         bt_tareas.setOnClickListener {
-            findNavController().navigate(R.id.action_navegationFragment_to_tareasFragment)
+            findNavController().navigate(R.id.next_to_tareasFragment)
         }
         bt_clientes.setOnClickListener {
-            findNavController().navigate(R.id.action_navegationFragment_to_clientesFragment)
+            findNavController().navigate(R.id.next_to_clientesFragment)
         }
 
         bt_estadisticas.setOnClickListener {
-            findNavController().navigate(R.id.action_navegationFragment_to_estyrepFragment)
+            findNavController().navigate(R.id.next_to_estyrepFragment)
         }
     }
 }

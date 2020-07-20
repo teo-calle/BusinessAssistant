@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_inventario.*
-import kotlinx.android.synthetic.main.fragment_navegation.*
 
 
 class inventarioFragment : Fragment() {
@@ -23,7 +22,7 @@ class inventarioFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bt_new_element.setOnClickListener {
-            findNavController().navigate(R.id.action_inventarioFragment_to_new_ElementFragment22)
+            findNavController().navigate(R.id.next_to_new_elementFragment)
         }
 
     }

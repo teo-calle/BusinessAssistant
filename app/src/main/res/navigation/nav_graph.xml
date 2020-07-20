@@ -40,7 +40,7 @@
         android:label="fragment_inventario"
         tools:layout="@layout/fragment_inventario" >
         <action
-            android:id="@+id/action_inventarioFragment_to_new_ElementFragment22"
+            android:id="@+id/next_to_new_elementFragment"
             app:destination="@id/new_ElementFragment"
             app:popUpTo="@id/inventarioFragment" />
     </fragment>
@@ -50,19 +50,19 @@
         android:label="fragment_navegation"
         tools:layout="@layout/fragment_navegation">
         <action
-            android:id="@+id/action_navegationFragment_to_inventarioFragment"
+            android:id="@+id/next_to_inventarioFrament"
             app:destination="@id/inventarioFragment" />
         <action
-            android:id="@+id/action_navegationFragment_to_comordFragment"
+            android:id="@+id/next_to_comordFragment"
             app:destination="@id/comordFragment" />
         <action
-            android:id="@+id/action_navegationFragment_to_tareasFragment"
+            android:id="@+id/next_to_tareasFragment"
             app:destination="@id/tareasFragment" />
         <action
-            android:id="@+id/action_navegationFragment_to_clientesFragment"
+            android:id="@+id/next_to_clientesFragment"
             app:destination="@id/clientesFragment" />
         <action
-            android:id="@+id/action_navegationFragment_to_estyrepFragment"
+            android:id="@+id/next_to_estyrepFragment"
             app:destination="@id/estyrepFragment" />
     </fragment>
     <fragment
