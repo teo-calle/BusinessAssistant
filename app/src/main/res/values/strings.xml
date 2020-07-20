@@ -56,5 +56,6 @@
     <string name="correo_actulizado">Digite el nuevo correo</string>
     <string name="nueva_direccion">Digite la nueva direccion</string>
     <string name="actualizar">actulizar</string>
+    <string name="borrar">borrar</string>
 
 </resources>
