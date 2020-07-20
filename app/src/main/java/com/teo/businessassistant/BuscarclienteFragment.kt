@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.google.firebase.database.*
 import com.teo.businessassistant.model.Cliente
 import kotlinx.android.synthetic.main.fragment_buscarcliente.*
@@ -36,10 +37,7 @@ class BuscarclienteFragment : Fragment() {
     private fun buscarenFirebase(nombre: String) {
         val database=FirebaseDatabase.getInstance()
         val myRef=database.getReference("clientes")
-
-
-
-
+        var clienteExiste=false
         val postListener=object:ValueEventListener{
             override fun onCancelled(error: DatabaseError) {
             }
@@ -49,11 +47,14 @@ class BuscarclienteFragment : Fragment() {
                 for(datasnapshot:DataSnapshot in snapshot.children){
                     val cliente=datasnapshot.getValue(Cliente::class.java)
                     if(cliente?.nombre_cliente==nombre){
-
+                        clienteExiste=true
                         mostrarCliente(cliente.nombre_cliente,cliente.correo_cliente,cliente.direccion_cliente,cliente.celular_cliente)
 
                     }
                 }
+
+                if(!clienteExiste)
+                    Toast.makeText(requireContext(),"El cliente no existe", Toast.LENGTH_SHORT).show()
 
                 Log.d("data",snapshot.toString())
             }

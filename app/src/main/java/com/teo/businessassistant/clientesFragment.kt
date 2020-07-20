@@ -35,9 +35,10 @@ class clientesFragment : Fragment() {
 
         /*************Funcionalidad de los botones que hay en este fragmento****************/
         /***********************************************************************************/
+           /* bt_buscarcliente.setOnClickListener {
             /*bt_buscarcliente.setOnClickListener {
                 findNavController().navigate(R.id.next_to_buscarcliente)
-            }*/
+            }
         /***********************************************************************************/
          /**********************************************************************************/
             bt_actualizarcliente.setOnClickListener {
@@ -60,8 +61,7 @@ class clientesFragment : Fragment() {
         mostrarMensajeBienvenida()
         /*FIN FIREBASE*/
 
-        /***********Con esto se lleva toda la info al clickear a la base de datos***********/
-        /***********************************************************************************/
+        /*Con esto se lleva toda la info al clickear a la base de datos*/
         bt_agregarcliente.setOnClickListener{
             val nombre_cliente = et_nombreCliente.text.toString()
             val correo_cliente = et_CorreoCliente.text.toString()
