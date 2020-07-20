@@ -47,23 +47,10 @@
         android:label="fragment_estyrep"
         tools:layout="@layout/fragment_estyrep" />
     <fragment
-        android:id="@+id/inventarioFragment"
-        android:name="com.teo.businessassistant.inventarioFragment"
-        android:label="fragment_inventario"
-        tools:layout="@layout/fragment_inventario" >
-        <action
-            android:id="@+id/next_to_new_elementFragment"
-            app:destination="@id/new_ElementFragment"
-            app:popUpTo="@id/inventarioFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/navegationFragment"
         android:name="com.teo.businessassistant.NavegationFragment"
         android:label="fragment_navegation"
         tools:layout="@layout/fragment_navegation">
-        <action
-            android:id="@+id/next_to_inventarioFrament"
-            app:destination="@id/inventarioFragment" />
         <action
             android:id="@+id/next_to_comordFragment"
             app:destination="@id/comordFragment" />
@@ -76,6 +63,9 @@
         <action
             android:id="@+id/next_to_estyrepFragment"
             app:destination="@id/estyrepFragment" />
+        <action
+            android:id="@+id/next_to_listinventario"
+            app:destination="@id/listInventarioFragment" />
     </fragment>
     <fragment
         android:id="@+id/tareasFragment"
@@ -86,7 +76,11 @@
         android:id="@+id/new_ElementFragment"
         android:name="com.teo.businessassistant.New_ElementFragment"
         android:label="fragment_new_element"
-        tools:layout="@layout/fragment_new_element" />
+        tools:layout="@layout/fragment_new_element" >
+        <action
+            android:id="@+id/next_to_listinventario"
+            app:destination="@id/listInventarioFragment" />
+    </fragment>
     <fragment
         android:id="@+id/buscarclienteFragment"
         android:name="com.teo.businessassistant.BuscarclienteFragment"
@@ -107,4 +101,13 @@
         android:name="com.teo.businessassistant.ListaClientesFragment"
         android:label="fragment_listaclientes"
         tools:layout="@layout/fragment_listaclientes" />
+    <fragment
+        android:id="@+id/listInventarioFragment"
+        android:name="com.teo.businessassistant.ListInventarioFragment"
+        android:label="fragment_listinventario"
+        tools:layout="@layout/fragment_listinventario" >
+        <action
+            android:id="@+id/next_to_new_element"
+            app:destination="@id/new_ElementFragment" />
+    </fragment>
 </navigation>

@@ -57,5 +57,16 @@
     <string name="nueva_direccion">Digite la nueva direccion</string>
     <string name="actualizar">actulizar</string>
     <string name="borrar">borrar</string>
+    <string name="tv_nombre_del_elemento">Nombre del elemento*</string>
+    <string name="name_elemento">Nombre del nuevo elemento</string>
+    <string name="scannerQR">Scanner QR</string>
+    <string name="tv_unit">Unidad*</string>
+    <string name="unit">Ingrese las unidades</string>
+    <string name="descripcion">Escriba aquí la descripcion del producto</string>
+    <string name="description">Descripción*</string>
+    <string name="precio">Precio*</string>
+    <string name="dig_precio">Digite el precio</string>
+    <string name="add">Añadir</string>
+    <string name="cancel">Cancelar</string>
 
 </resources>

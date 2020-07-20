@@ -10,6 +10,7 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         android:paddingTop="?attr/actionBarSize">
 
 
@@ -165,7 +166,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bt_buscarcliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,14 +174,13 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bt_navegation"
-            android:text="@string/Buscar"
-            android:textSize="12sp"
+            android:src="@android:drawable/ic_menu_search"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/bt_actualizarcliente"
             app:layout_constraintHorizontal_bias="0.685"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bt_actualizarcliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -188,13 +188,12 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bt_navegation"
-            android:text="@string/Actualizar"
-            android:textSize="12sp"
+            android:src="@drawable/ic_udate"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/bt_eliminarcliente"
             app:layout_constraintStart_toEndOf="@+id/bt_buscarcliente" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bt_eliminarcliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,13 +201,12 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bt_navegation"
-            android:text="@string/eliminar_cliente"
-            android:textSize="12sp"
+            android:src="@android:drawable/ic_menu_delete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/bt_listacliente"
             app:layout_constraintStart_toEndOf="@+id/bt_actualizarcliente" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bt_listacliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -216,8 +214,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bt_navegation"
-            android:text="@string/Lista"
-            android:textSize="12sp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/bt_eliminarcliente" />
