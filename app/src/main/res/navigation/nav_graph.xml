@@ -12,8 +12,17 @@
         android:label="fragment_clientes"
         tools:layout="@layout/fragment_clientes" >
         <action
-            android:id="@+id/action_clientesFragment_to_buscarclienteFragment"
+            android:id="@+id/next_to_buscarcliente"
             app:destination="@id/buscarclienteFragment" />
+        <action
+            android:id="@+id/next_to_actualizarcliente"
+            app:destination="@id/actulizarClienteFragment" />
+        <action
+            android:id="@+id/next_to_eliminarcliente"
+            app:destination="@id/eliminarClienteFragment" />
+        <action
+            android:id="@+id/next_to_listaclientes"
+            app:destination="@id/listaClientesFragment" />
     </fragment>
     <fragment
         android:id="@+id/comordFragment"
@@ -71,4 +80,19 @@
         android:name="com.teo.businessassistant.BuscarclienteFragment"
         android:label="fragment_buscarcliente"
         tools:layout="@layout/fragment_buscarcliente" />
+    <fragment
+        android:id="@+id/actulizarClienteFragment"
+        android:name="com.teo.businessassistant.ActulizarClienteFragment"
+        android:label="fragment_actulizarcliente"
+        tools:layout="@layout/fragment_actulizarcliente" />
+    <fragment
+        android:id="@+id/eliminarClienteFragment"
+        android:name="com.teo.businessassistant.EliminarClienteFragment"
+        android:label="fragment_eliminarcliente"
+        tools:layout="@layout/fragment_eliminarcliente" />
+    <fragment
+        android:id="@+id/listaClientesFragment"
+        android:name="com.teo.businessassistant.ListaClientesFragment"
+        android:label="fragment_listaclientes"
+        tools:layout="@layout/fragment_listaclientes" />
 </navigation>

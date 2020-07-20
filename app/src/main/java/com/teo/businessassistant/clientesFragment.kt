@@ -33,9 +33,28 @@ class clientesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
-
+        /*************Funcionalidad de los botones que hay en este fragmento****************/
+        /***********************************************************************************/
+            bt_buscarcliente.setOnClickListener {
+                findNavController().navigate(R.id.next_to_buscarcliente)
+            }
+        /***********************************************************************************/
+         /**********************************************************************************/
+            bt_actualizarcliente.setOnClickListener {
+                findNavController().navigate(R.id.next_to_actualizarcliente)
+            }
+        /***********************************************************************************/
+        /***********************************************************************************/
+            bt_eliminarcliente.setOnClickListener {
+                findNavController().navigate(R.id.next_to_eliminarcliente)
+            }
+        /***********************************************************************************/
+        /***********************************************************************************/
+        bt_listacliente.setOnClickListener {
+            findNavController().navigate(R.id.next_to_listaclientes)
+        }
+        /***********************************************************************************/
+        /***********************************************************************************/
 
         /*FIREBASE*/
         mostrarMensajeBienvenida()
