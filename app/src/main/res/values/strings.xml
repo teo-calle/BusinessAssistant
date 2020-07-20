@@ -6,6 +6,7 @@
     <string name="registrarse">Ir a Registro</string>
 
     <string name="digitar_nombre">Nombre</string>
+    <string name="nombre">Digite nombre</string>
     <string name="digitar_correo">Correo electronico</string>
     <string name="digitar_contrasena">Contraseña</string>
     <string name="digitar_rcontrasena">Repetir contraseña</string>
@@ -50,5 +51,10 @@
     <string name="buscar_cliente">BUSCAR</string>
     <string name="digite_nom_cliente">Digite nombre</string>
     <string name="eliminar_cliente">Eliminar</string>
+    <string name="buscar">Buscar</string>
+    <string name="nuevo_telefono">Digite el nuevo telefono</string>
+    <string name="correo_actulizado">Digite el nuevo correo</string>
+    <string name="nueva_direccion">Digite la nueva direccion</string>
+    <string name="actualizar">actulizar</string>
 
 </resources>

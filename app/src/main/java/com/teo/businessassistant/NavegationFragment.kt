@@ -33,8 +33,7 @@ class NavegationFragment : Fragment() {
         Toast.makeText(activity?.applicationContext,"Bienvenido $correo", Toast.LENGTH_SHORT).show()
 
 
-
-
+        /************************Botones**************************************************/
         bt_inventario.setOnClickListener {
             findNavController().navigate(R.id.next_to_inventarioFrament)
         }
@@ -53,5 +52,6 @@ class NavegationFragment : Fragment() {
         bt_estadisticas.setOnClickListener {
             findNavController().navigate(R.id.next_to_estyrepFragment)
         }
+        /***********************************************************************************/
     }
 }
