@@ -12,14 +12,14 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_nombre3"
+            android:id="@+id/et_nombre_deudor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre" />
+            android:hint="@string/nombre_deudor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/bt_buscar2"
+        android:id="@+id/bt_buscard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/form_bt_circle"
@@ -31,40 +31,26 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_nuevotelefono"
+            android:id="@+id/et_deuda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nuevo_telefono" />
+            android:hint="@string/deuda" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_correoactual"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/correo_actulizado" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_nueva_direccion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/nueva_direccion" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/bt_actualizarcliente"
+        android:id="@+id/bt_agregardeudor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/form_bt_circle"
-        android:text="@string/actualizar"
+        android:text="@string/agregar_deudor"
         android:textColor="@color/black" />
 
 </LinearLayout>

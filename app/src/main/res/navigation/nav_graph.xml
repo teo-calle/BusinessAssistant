@@ -43,7 +43,7 @@
         tools:layout="@layout/fragment_comord" />
     <fragment
         android:id="@+id/estyrepFragment"
-        android:name="com.teo.businessassistant.estyrepFragment"
+        android:name="com.teo.businessassistant.DeudoresFragment"
         android:label="fragment_estyrep"
         tools:layout="@layout/fragment_estyrep" />
     <fragment
@@ -71,7 +71,7 @@
         android:id="@+id/tareasFragment"
         android:name="com.teo.businessassistant.tareasFragment"
         android:label="fragment_tareas"
-        tools:layout="@layout/fragment_tareas" />
+        tools:layout="@layout/fragment_deudores" />
     <fragment
         android:id="@+id/new_ElementFragment"
         android:name="com.teo.businessassistant.New_ElementFragment"

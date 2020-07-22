@@ -35,8 +35,8 @@ class clientesFragment : Fragment() {
 
         /*************Funcionalidad de los botones que hay en este fragmento****************/
         /***********************************************************************************/
-           /* bt_buscarcliente.setOnClickListener {
-            /*bt_buscarcliente.setOnClickListener {
+
+            bt_buscarcliente.setOnClickListener {
                 findNavController().navigate(R.id.next_to_buscarcliente)
             }
         /***********************************************************************************/
@@ -56,6 +56,8 @@ class clientesFragment : Fragment() {
         }
         /***********************************************************************************/
         /***********************************************************************************/
+
+
 
         /*FIREBASE*/
         mostrarMensajeBienvenida()
@@ -86,7 +88,7 @@ class clientesFragment : Fragment() {
 
     private fun guardarEnFirebase(nombre_cliente: String, correo_cliente: String, celular_cliente: String, direccion_cliente: String) {
         val database: FirebaseDatabase = FirebaseDatabase.getInstance()  /*Instancia de nuestra base de datos*/
-        val myRef: DatabaseReference =database.getReference("clientes")
+        val myRef: DatabaseReference =database.getReference("Clientes")
         val id :String?=myRef.push().key
         val Cliente=Cliente(
             id, /* Creamos nuestro objeo*/

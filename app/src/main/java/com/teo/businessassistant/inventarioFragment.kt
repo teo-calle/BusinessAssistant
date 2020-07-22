@@ -22,7 +22,7 @@ class inventarioFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bt_new_element.setOnClickListener {
-            findNavController().navigate(R.id.next_to_new_elementFragment)
+           findNavController().navigate(R.id.next_to_new_element)
         }
 
     }

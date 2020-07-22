@@ -170,23 +170,35 @@
             android:id="@+id/bt_buscarcliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/bt_navegation"
             android:src="@android:drawable/ic_menu_search"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/bt_actualizarcliente"
-            app:layout_constraintHorizontal_bias="0.685"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/bt_agregardeudor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bt_navegation"
+            android:src="@android:drawable/ic_menu_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_listadeudores1"
+            app:layout_constraintStart_toEndOf="@+id/bt_listacliente" />
 
         <ImageButton
             android:id="@+id/bt_actualizarcliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/bt_navegation"
             android:src="@drawable/ic_udate"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -197,9 +209,9 @@
             android:id="@+id/bt_eliminarcliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/bt_navegation"
             android:src="@android:drawable/ic_menu_delete"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -210,14 +222,27 @@
             android:id="@+id/bt_listacliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bt_navegation"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_agregardeudor1"
+            app:layout_constraintStart_toEndOf="@+id/bt_eliminarcliente" />
+
+        <ImageButton
+            android:id="@+id/bt_listadeudores1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/bt_navegation"
             android:src="@android:drawable/ic_menu_sort_by_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bt_eliminarcliente" />
+            app:layout_constraintStart_toEndOf="@+id/bt_agregardeudor1" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

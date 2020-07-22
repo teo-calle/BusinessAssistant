@@ -6,6 +6,7 @@ class Cliente (
    val celular_cliente: String="",
    val direccion_cliente: String="",
    val correo_cliente: String=""
+
 )
 
 
