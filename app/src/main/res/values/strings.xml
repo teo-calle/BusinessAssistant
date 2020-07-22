@@ -68,8 +68,7 @@
     <string name="dig_precio">Digite el precio</string>
     <string name="add">Añadir</string>
     <string name="cancel">Cancelar</string>
-    <string name="nombre_deudor">Nombre del Cliente</string>
-    <string name="deuda">Cantidad</string>
-    <string name="agregar_deudor">Agregar</string>
+    <string name="titulo_resgistrarcompra">Registrar una Compra</string>
+    <string name="elegircliente">Elegir un cliente</string>
 
 </resources>
