@@ -167,7 +167,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
 
         <ImageButton
-            android:id="@+id/bt_buscarcliente"
+            android:id="@+id/bt_buscarbicho"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -180,7 +180,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageButton
-            android:id="@+id/bt_agregardeudor1"
+            android:id="@+id/bt_agregarprueba"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -203,7 +203,7 @@
             android:src="@drawable/ic_udate"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/bt_eliminarcliente"
-            app:layout_constraintStart_toEndOf="@+id/bt_buscarcliente" />
+            app:layout_constraintStart_toEndOf="@+id/bt_buscarbicho" />
 
         <ImageButton
             android:id="@+id/bt_eliminarcliente"
@@ -228,7 +228,7 @@
             android:background="@drawable/bt_navegation"
             android:src="@android:drawable/ic_menu_sort_by_size"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bt_agregardeudor1"
+            app:layout_constraintEnd_toStartOf="@+id/bt_agregarprueba"
             app:layout_constraintStart_toEndOf="@+id/bt_eliminarcliente" />
 
         <ImageButton
@@ -242,7 +242,7 @@
             android:src="@android:drawable/ic_menu_sort_by_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bt_agregardeudor1" />
+            app:layout_constraintStart_toEndOf="@+id/bt_agregarprueba" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

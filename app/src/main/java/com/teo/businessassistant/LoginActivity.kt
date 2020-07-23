@@ -47,7 +47,8 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     goToMainActivity()
                 } else {
-                    showMessage("Authentication failed.")
+                    val message= task.exception!!.message.toString()
+                    showMessage(message)
                     Log.w("TAG", "signInWithnEmail:failure", task.getException());
                 }
             }

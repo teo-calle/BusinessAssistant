@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,22 +19,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
-
         var datosRecibidos : Bundle? =intent.extras
         if(datosRecibidos != null){
             correo = datosRecibidos?.getString("correo")
             contra = datosRecibidos?.getString("contra")
-
             //tv_correo.text=correo
-
         }
-
-
     }
-
-
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -43,26 +35,17 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.item1->{
-                Toast.makeText(this,"Sesion cerrada", Toast.LENGTH_SHORT).show()
-                goToLoginActivity( )
-
-
-
-            }
-        }
+       if (item.itemId==R.id.item1){
+           FirebaseAuth.getInstance().signOut()
+           goToLoginActivity()
+       }
         return super.onOptionsItemSelected(item)
     }
-
     private fun goToLoginActivity( ){
         val intent = Intent(this,LoginActivity::class.java)
-        intent.putExtra("correo",correo)
-        intent.putExtra("contra",contra)
+        //intent.putExtra("correo",correo)
+        //intent.putExtra("contra",contra)
         startActivity(intent)
         finish()
-
-
     }
-
 }

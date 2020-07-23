@@ -70,5 +70,8 @@
     <string name="cancel">Cancelar</string>
     <string name="titulo_resgistrarcompra">Registrar una Compra</string>
     <string name="elegircliente">Elegir un cliente</string>
+    <string name="nombre_deudor">Nombre del deudor</string>
+    <string name="deuda">Deuda</string>
+    <string name="agregar_deudor">Agregar</string>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.teo.businessassistant
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,8 +16,6 @@ import com.teo.businessassistant.model.Cliente
 import kotlinx.android.synthetic.main.activity_registro.bt_agregarcliente
 import kotlinx.android.synthetic.main.activity_registro.et_CorreoCliente
 import kotlinx.android.synthetic.main.fragment_clientes.*
-import kotlinx.android.synthetic.main.fragment_inventario.*
-import java.sql.Types
 
 
 class clientesFragment : Fragment() {
@@ -36,12 +35,14 @@ class clientesFragment : Fragment() {
         /*************Funcionalidad de los botones que hay en este fragmento****************/
         /***********************************************************************************/
 
-            bt_buscarcliente.setOnClickListener {
-                findNavController().navigate(R.id.next_to_buscarcliente)
+            bt_buscarbicho.setOnClickListener {
+                findNavController().navigate(R.id.action_clientesFragment_to_buscarclienteFragment)
+                Log.d("buscando","pasó")
             }
         /***********************************************************************************/
          /**********************************************************************************/
             bt_actualizarcliente.setOnClickListener {
+
                 findNavController().navigate(R.id.next_to_actualizarcliente)
             }
         /***********************************************************************************/
@@ -70,7 +71,6 @@ class clientesFragment : Fragment() {
             val celular_cliente= et_celularCliente.text.toString()
             val direccion_cliente=et_direccionCliente.text.toString()
 
-
             guardarEnFirebase(nombre_cliente,correo_cliente,celular_cliente,direccion_cliente)
 
 
@@ -88,8 +88,12 @@ class clientesFragment : Fragment() {
 
     private fun guardarEnFirebase(nombre_cliente: String, correo_cliente: String, celular_cliente: String, direccion_cliente: String) {
         val database: FirebaseDatabase = FirebaseDatabase.getInstance()  /*Instancia de nuestra base de datos*/
-        val myRef: DatabaseReference =database.getReference("Clientes")
+        val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
+        val user: FirebaseUser? = mAuth.currentUser
+        val listaC = user?.uid.toString()
+        val myRef: DatabaseReference =database.getReference(listaC)
         val id :String?=myRef.push().key
+
         val Cliente=Cliente(
             id, /* Creamos nuestro objeo*/
             nombre_cliente  ,
